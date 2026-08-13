@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Maxtilliz Pharmacy — global styles (Tailwind v4 theme)
+   Brand palette: medical green + warm amber accent
+   ============================================================ */
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  
+  --color-brand-50: #e6f4ef;
+  --color-brand-100: #c8e7dd;
+  --color-brand-200: #96d3c0;
+  --color-brand-300: #5fb9a0;
+  --color-brand-400: #0B132B;
+  --color-brand-500: #1e9277;
+  --color-brand-550: #90e0ef;
+  --color-brand-600: #00B4D8;
+  --color-brand-700: #0B132B;
+  --color-brand-800: #0B132B;
+  --color-brand-900: #1c2541;
+
+  /* Warm accent (amber) */
+  --color-accent-50: #fdf3dd;
+  --color-accent-100: #fbe7ba;
+  --color-accent-300: #f5bd4f;
+  --color-accent-400: #111e2f;
+  --color-accent-500: #d99500;
+  --color-accent-600: #b87a00;
+
+  /* Ink (headings/text) */
+  --color-ink-900: #0D102F;
+  --color-ink-700: #334e68;
+  --color-ink-500: #627d98;
+  --color-ink-300: #9fb3c8;
+  --color-ink-100: #d9e2ec;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0D102F;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* ---------- Small reusable base helpers ---------- */
+.container-page {
+  @apply mx-auto w-full max-w-6xl px-5;
+}
+
+.eyebrow {
+  @apply mb-2 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-brand-600;
+}
+
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
