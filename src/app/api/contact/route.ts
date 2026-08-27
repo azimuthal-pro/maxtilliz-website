@@ -22,7 +22,9 @@ export async function POST(request: Request) {
     const recipient = process.env.CONTACT_RECIPIENT_EMAIL?.trim();
     const smtpUser = process.env.SMTP_USER?.trim();
 
-    if (!recipient || !smtpUser || !process.env.SMTP_PASS || !process.env.SMTP_HOST) {
+    const smtpPass = (process.env.SMTP_PASS || "").replace(/\s/g, "");
+
+    if (!recipient || !smtpUser || !smtpPass || !process.env.SMTP_HOST) {
       console.error("Contact form: SMTP configuration is missing.");
       return NextResponse.json(
         { error: "Server email is not configured yet. Please add your SMTP settings." },
@@ -36,7 +38,7 @@ export async function POST(request: Request) {
       secure: process.env.SMTP_SECURE === "true",
       auth: {
         user: smtpUser,
-        pass: process.env.SMTP_PASS,
+        pass: smtpPass,
       },
     });
 

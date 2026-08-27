@@ -108,7 +108,7 @@ export default function ContactPage() {
             </ul>
 
             {/* Social */}
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-500">
                 Follow us
               </div>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact form */}
@@ -134,37 +134,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Google Maps */}
-      <section className="pb-16">
-        <div className="container-page">
-          <div className="overflow-hidden rounded-2xl border border-ink-100 shadow-sm">
-            {isPlaceholder(site.mapsEmbedUrl) ? (
-              <div className="flex aspect-[16/7] w-full items-center justify-center bg-brand-50 p-10 text-center">
-                <div>
-                  <div className="text-3xl">🗺️</div>
-                  <p className="mt-3 text-sm text-ink-500">
-                    Add your Google Maps embed link in{" "}
-                    <code className="rounded bg-white px-1.5 py-0.5 text-brand-600">
-                      src/data/site.ts
-                    </code>{" "}
-                    (the <code>mapsEmbedUrl</code> field) to show your location
-                    here.
-                  </p>
-                </div>
-              </div>
-            ) : (
-              <iframe
-                src={site.mapsEmbedUrl}
-                title="Maxtilliz Pharmacy location"
-                className="aspect-[16/7] w-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-            )}
-          </div>
-        </div>
-      </section>
+     
     </>
   );
 }
