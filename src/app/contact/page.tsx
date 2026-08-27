@@ -24,7 +24,6 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         subtitle="We'd love to hear from you. Reach us any way that's easiest for you."
-        breadcrumb="Home / Contact"
       />
 
       <section className="py-16">

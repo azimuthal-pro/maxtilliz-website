@@ -24,7 +24,7 @@ export default function ServicesPage() {
         <div className="container-page">
           <SectionHeading
             eyebrow="What we offer"
-            title="Pharmacy services"
+            title=""
             description="From everyday essentials to professional care, here's how we can help."
           />
           <div className="grid gap-5 md:grid-cols-2">

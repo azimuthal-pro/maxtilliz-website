@@ -10,13 +10,65 @@ export const metadata: Metadata = {
 };
 
 const values = [
-  { icon: "🤝", title: "Integrity", text: "We do the right thing, even when no one is watching." },
-  { icon: "❤️", title: "Compassion", text: "We treat every customer with warmth and genuine care." },
-  { icon: "🎯", title: "Accuracy", text: "We double-check everything to keep you safe." },
-  { icon: "💡", title: "Knowledge", text: "We keep learning so we can advise you with confidence." },
-  { icon: "🏘️", title: "Community", text: "We are proud to serve and support our local community." },
-  { icon: "♻️", title: "Accessibility", text: "Quality healthcare should be simple and within reach for all." },
+  {
+    image:
+      "https://images.unsplash.com/photo-1632961974688-fae53de3cabc?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Wooden block spelling trust among flowers",
+    title: "Integrity",
+    text: "We do the right thing, even when no one is watching.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1461532257246-777de18cd58b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Two hands meeting palm to palm",
+    title: "Compassion",
+    text: "We treat every customer with warmth and genuine care.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Pharmacist carefully reviewing a prescription document",
+    title: "Accuracy",
+    text: "We double-check everything to keep you safe.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1673515334386-2b24073bb22f?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Scrabble tiles spelling the word learn",
+    title: "Knowledge",
+    text: "We keep learning so we can advise you with confidence.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "A community group stacking their hands together",
+    title: "Community",
+    text: "We are proud to serve and support our local community.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1586726370832-3440a511e479?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Two hands reaching toward each other",
+    title: "Accessibility",
+    text: "Quality healthcare should be simple and within reach for all.",
+  },
 ];
+
+const mission = {
+  image:
+    "https://images.unsplash.com/photo-1576091358783-a212ec293ff3?auto=format&fit=crop&w=800&q=80",
+  imageAlt: "A pharmacist in a white coat showing a medicine bottle to a customer",
+  title: "Our Mission",
+  text: "Our mission is to provide safe, affordable, and quality healthcare products and services to our community. We are committed to serving our customers with professionalism, care, and reliability while helping improve their health and wellbeing.",
+};
+
+const vision = {
+  image:
+    "https://images.unsplash.com/photo-1580281657529-557a6abb6387?auto=format&fit=crop&w=800&q=80",
+  imageAlt: "A pharmacist standing in a tidy pharmacy",
+  title: "Our Vision",
+  text: "To be a trusted and preferred healthcare provider, known for quality products, excellent service, and genuine care for the wellbeing of our customers and community.",
+};
 
 const trustPoints = [
   "Licensed, qualified pharmacists on hand",
@@ -32,8 +84,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Us"
-        subtitle="Get to know the pharmacy behind the counter."
-        breadcrumb="Home / About Us"
+        subtitle="Learn about our story, mission, vision, values, and why customers trust us."
       />
 
       {/* WHO WE ARE + OUR STORY */}
@@ -42,7 +93,7 @@ export default function AboutPage() {
           {/* Who we are */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <SectionHeading eyebrow="Who we are" title="A pharmacy that puts people first" />
+              <SectionHeading eyebrow="Who we are" title="An OTC that puts people first" />
               <p className="mb-4 text-ink-700">
                 {site.name} is a community OTC medication provider built on a simple belief:
                 healthcare should be personal, honest and accessible. We are
@@ -73,7 +124,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <SectionHeading eyebrow="Our story" title="How it all began" />
+              <SectionHeading eyebrow="Our story" title="" />
               <p className="mb-4 text-ink-700">
 Maxtillixz Chem was founded in 2017 with the aim of providing quality and affordable healthcare products to the community. What started as a small shop has grown into a trusted healthcare facility, built on professionalism, customer care, and reliability.
 
@@ -99,22 +150,35 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
             title="Mission & Vision"
           />
           <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl border border-ink-100 bg-white p-8 text-center">
-              <div className="text-3xl">🎯</div>
-              <h3 className="mt-4 text-lg font-bold text-ink-900">Our Mission</h3>
-              <p className="mt-3 text-sm text-ink-700">
-Our mission is to provide safe, affordable, and quality healthcare products and services to our community. We are committed to serving our customers with professionalism, care, and reliability while helping improve their health and wellbeing.
-
-              </p>
+            <div className="overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={mission.image}
+                  alt={mission.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 text-center">
+                <h3 className="text-lg font-bold text-ink-900">{mission.title}</h3>
+                <p className="mt-3 text-sm text-ink-700">{mission.text}</p>
+              </div>
             </div>
-            <div className="rounded-2xl border border-ink-100 bg-white p-8 text-center">
-              <div className="text-3xl">🔭</div>
-              <h3 className="mt-4 text-lg font-bold text-ink-900">Our Vision</h3>
-              <p className="mt-3 text-sm text-ink-700">
-
-To be a trusted and preferred healthcare provider, known for quality products, excellent service, and genuine care for the wellbeing of our customers and community.
-
-              </p>
+            <div className="overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={vision.image}
+                  alt={vision.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 text-center">
+                <h3 className="text-lg font-bold text-ink-900">{vision.title}</h3>
+                <p className="mt-3 text-sm text-ink-700">{vision.text}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -133,13 +197,23 @@ To be a trusted and preferred healthcare provider, known for quality products, e
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-2xl border border-ink-100 bg-white p-7 text-center"
+                className="group overflow-hidden rounded-2xl border border-ink-100 bg-white text-center transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl"
               >
-                <div className="text-3xl">{value.icon}</div>
-                <h3 className="mt-3 text-base font-bold text-ink-900">
-                  {value.title}
-                </h3>
-                <p className="mt-2 text-sm text-ink-700">{value.text}</p>
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <Image
+                    src={value.image}
+                    alt={value.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="mt-3 text-base font-bold text-ink-900">
+                    {value.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink-700">{value.text}</p>
+                </div>
               </div>
             ))}
           </div>

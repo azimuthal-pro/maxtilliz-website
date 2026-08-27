@@ -1,15 +1,3 @@
-/* ============================================================
-   Health Tips content.
-   Add/edit articles here. Each tip needs:
-   - slug       : URL-friendly id (used for /health-tips/[slug])
-   - title      : article title
-   - category   : one of the categories below
-   - date       : ISO date (YYYY-MM-DD)
-   - summary    : short description for the listing page
-   - image      : cover image URL (Unsplash placeholders for now)
-   - content    : blocks — p, h2, ul
-   ============================================================ */
-
 export type TipCategory =
   | "General Health"
   | "Nutrition"
@@ -103,7 +91,7 @@ export const healthTips: HealthTip[] = [
       },
       {
         type: "p",
-        text: "Remember: before starting any new health routine, particularly if you have an existing condition or take medication, speak with a healthcare professional or your pharmacist.",
+        text: "Remember: before starting any new health routine, particularly if you have an existing condition or take medication, speak with a healthcare professional.",
       },
     ],
   },
@@ -114,8 +102,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-07-05",
     summary:
       "What the labels mean, how to take your medicines safely, and the questions worth asking your pharmacist.",
-    image: "/images/placeholders/medication-safety.svg",
-    imageAlt: "Prescription medicines and a pill bottle",
+    image:
+      "https://images.unsplash.com/photo-1562243061-204550d8a2c9?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A prescription medicine bottle with capsules",
     content: [
       {
         type: "p",
@@ -170,8 +159,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-06-18",
     summary:
       "Healthy eating doesn't have to be expensive. Practical tips to eat well without breaking the bank.",
-    image: "/images/placeholders/nutrition.svg",
-    imageAlt: "A healthy plate of food",
+    image:
+      "https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Fresh assorted vegetables for healthy eating",
     content: [
       {
         type: "p",
@@ -214,8 +204,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-05-30",
     summary:
       "Why hydration matters, how much you really need, and easy ways to drink more water.",
-    image: "/images/placeholders/wellness.svg",
-    imageAlt: "A glass of water",
+    image:
+      "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A clear glass of water for staying hydrated",
     content: [
       {
         type: "p",
@@ -259,8 +250,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-05-12",
     summary:
       "Practical ways to support your child's immune system through nutrition, sleep and everyday habits.",
-    image: "/images/placeholders/childrens-health.svg",
-    imageAlt: "A happy, healthy child",
+    image:
+      "https://images.unsplash.com/photo-1740741704354-86d56c5ff3f6?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A happy black girl smiling outside",
     content: [
       {
         type: "p",
@@ -303,8 +295,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-04-22",
     summary:
       "Routine screenings and check-ups catch problems early and keep you in control of your health.",
-    image: "/images/placeholders/womens-health.svg",
-    imageAlt: "A woman looking after her health",
+    image:
+      "https://images.unsplash.com/photo-1631558554226-fb65b25aa939?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A healthcare professional talking with a black woman patient",
     content: [
       {
         type: "p",
@@ -347,8 +340,9 @@ export const healthTips: HealthTip[] = [
     date: "2026-04-02",
     summary:
       "Men often skip check-ups. Here are five health areas every man should keep an eye on.",
-    image: "/images/placeholders/mens-health.svg",
-    imageAlt: "An active man exercising",
+    image:
+      "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "An active man exercising to stay healthy",
     content: [
       {
         type: "p",

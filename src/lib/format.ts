@@ -5,3 +5,11 @@ export function formatDate(iso: string): string {
     year: "numeric",
   });
 }
+
+export function formatToday(): string {
+  return new Date().toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}

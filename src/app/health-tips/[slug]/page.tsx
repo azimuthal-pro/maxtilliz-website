@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { healthTips } from "@/data/healthTips";
 import type { HealthTip } from "@/data/healthTips";
-import { formatDate } from "@/lib/format";
+import { formatToday } from "@/lib/format";
 
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
@@ -83,7 +83,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <span className="rounded-full bg-brand-50 px-3.5 py-1.5 font-semibold text-brand-600">
             {tip.category}
           </span>
-          <span>{formatDate(tip.date)}</span>
+          <span>{formatToday()}</span>
           <span>· Maxtilliz Pharmacy Team</span>
         </div>
 
@@ -100,13 +100,6 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
         <div className="mt-10 text-base leading-relaxed">
           {renderBlocks(tip)}
-        </div>
-
-        <div className="mt-12 rounded-xl border-l-4 border-accent-400 bg-accent-50 p-5 text-sm text-accent-600">
-          <strong>Disclaimer:</strong> The information on this page is for
-          general educational purposes only and is not a substitute for
-          professional medical advice. Always consult a qualified healthcare
-          provider or your pharmacist about your specific situation.
         </div>
 
         <div className="mt-12 rounded-2xl bg-brand-50 p-7 text-center">

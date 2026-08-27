@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { HealthTip, TipCategory } from "@/data/healthTips";
-import { formatDate } from "@/lib/format";
+import { formatToday } from "@/lib/format";
 
 type Filter = "all" | TipCategory;
 
@@ -60,39 +60,44 @@ export default function HealthTipsList({ tips, categories }: HealthTipsListProps
             <article
               key={tip.slug}
               data-category={tip.category}
-              className="flex flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-shadow hover:shadow-lg"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl"
             >
               <Link
                 href={`/health-tips/${tip.slug}`}
-                className="block overflow-hidden bg-brand-50"
+                className="relative block overflow-hidden bg-brand-50"
               >
                 <Image
                   src={tip.image}
                   alt={tip.imageAlt}
                   width={1200}
                   height={750}
-                  className="aspect-[16/10] w-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
+                <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-700 backdrop-blur">
+                  {tip.category}
+                </span>
               </Link>
               <div className="flex flex-1 flex-col p-6">
-                <div className="mb-3 flex items-center gap-3 text-xs text-ink-500">
-                  <span className="rounded-full bg-brand-50 px-3 py-1 font-semibold text-brand-600">
-                    {tip.category}
-                  </span>
-                  <span>{formatDate(tip.date)}</span>
-                </div>
-                <h3 className="text-lg font-bold text-ink-900">
-                  <Link href={`/health-tips/${tip.slug}`} className="hover:text-brand-600">
+                <h3 className="text-lg font-bold leading-snug text-ink-900">
+                  <Link
+                    href={`/health-tips/${tip.slug}`}
+                    className="transition-colors group-hover:text-brand-700"
+                  >
                     {tip.title}
                   </Link>
                 </h3>
-                <p className="mt-2 flex-1 text-sm text-ink-500">{tip.summary}</p>
-                <Link
-                  href={`/health-tips/${tip.slug}`}
-                  className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-brand-600 hover:text-brand-700"
-                >
-                  Read more →
-                </Link>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-500">
+                  {tip.summary}
+                </p>
+                <div className="mt-5 flex items-center justify-between border-t border-ink-100 pt-4">
+                  <span className="text-xs text-ink-400">{formatToday()}</span>
+                  <Link
+                    href={`/health-tips/${tip.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-brand-600 transition-colors hover:text-brand-700"
+                  >
+                    Read more →
+                  </Link>
+                </div>
               </div>
             </article>
           ))}

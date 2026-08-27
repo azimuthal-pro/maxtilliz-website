@@ -15,7 +15,6 @@ export default function HealthTipsPage() {
       <PageHero
         title="Health Tips"
         subtitle="Practical, trustworthy advice to help you and your family live healthier."
-        breadcrumb="Home / Health Tips"
       />
 
       <section className="py-16">

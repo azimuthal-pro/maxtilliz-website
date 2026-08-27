@@ -16,6 +16,7 @@ export default function ContactForm() {
 
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
     const message = String(data.get("message") || "").trim();
 
     if (!name || !email || !message) {
@@ -27,31 +28,40 @@ export default function ContactForm() {
     }
 
     setSending(true);
+    setStatus(null);
 
-    /* ============================================================
-       REAL INTEGRATION OPTIONS (choose one):
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone, message }),
+      });
 
-       Option A — Next.js API route (recommended for this project):
-         1. Create src/app/api/contact/route.ts
-         2. Send the form data to "/api/contact" with fetch().
-         3. In the route, forward the message via a mail service
-            (e.g. Nodemailer, Resend, SendGrid) or save to a DB.
+      const result = (await res.json().catch(() => ({}))) as {
+        error?: string;
+      };
 
-       Option B — Formspree (no backend needed):
-         1. Create a free form at https://formspree.io
-         2. POST to "https://formspree.io/f/yourFormId".
+      if (!res.ok) {
+        setStatus({
+          type: "error",
+          message: result.error || "Something went wrong. Please try again.",
+        });
+        return;
+      }
 
-       Below is a DEMO handler — it just simulates success so the
-       form works visually. Replace it when you add a real backend.
-       ============================================================ */
-    await new Promise((resolve) => setTimeout(resolve, 800)); // simulate network
-
-    setSending(false);
-    setStatus({
-      type: "success",
-      message: `Thank you, ${name}! This is a demo — your message wasn't sent yet. Connect an API route or form service to receive real messages.`,
-    });
-    form.reset();
+      setStatus({
+        type: "success",
+        message: `Thank you, ${name}! Your message has been sent — we'll get back to you soon.`,
+      });
+      form.reset();
+    } catch {
+      setStatus({
+        type: "error",
+        message: "Network error. Please check your connection and try again.",
+      });
+    } finally {
+      setSending(false);
+    }
   }
 
   const inputClass =
