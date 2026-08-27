@@ -165,35 +165,35 @@ export const healthTips: HealthTip[] = [
     content: [
       {
         type: "p",
-        text: "Many people believe eating healthily is costly — but with a little planning, it can be more affordable than you think.",
+        text: "Many people assume that eating healthily is expensive — but with a little planning, it can actually be more affordable than you think.",
       },
       {
         type: "h2",
-        text: "Plan your meals",
+        text: "Plan your meals in advance",
       },
       {
         type: "p",
-        text: "Planning a simple weekly menu helps you buy only what you need and reduces food waste — and food waste is money wasted.",
+        text: "Drawing up a simple weekly menu helps you buy only what you need and cuts down on food waste — and wasted food is wasted money.",
       },
       {
         type: "h2",
-        text: "Buy in season and in bulk",
+        text: "Choose in-season foods and buy in bulk",
       },
       {
         type: "p",
-        text: "Seasonal fruits and vegetables are cheaper and fresher. Buying staples like rice, beans, oats and pasta in bulk saves money over time.",
+        text: "Seasonal fruits and vegetables are cheaper and fresher, while buying staples like rice, beans, oats and pasta in bulk saves money over time.",
       },
       {
         type: "h2",
-        text: "Cook once, eat twice",
+        text: "Cook once and eat twice",
       },
       {
         type: "p",
-        text: "Prepare larger portions and store leftovers. A big pot of soup or stew can become several meals across the week.",
+        text: "Prepare larger portions and store the leftovers. A big pot of soup or stew can easily become several meals across the week.",
       },
       {
         type: "p",
-        text: "Eating well on a budget is about smart choices, not sacrifice. Small changes add up to healthier days and a healthier wallet.",
+        text: "Eating well on a budget is about making smart choices, not sacrifices. Small changes add up to healthier days and a healthier wallet.",
       },
     ],
   },
