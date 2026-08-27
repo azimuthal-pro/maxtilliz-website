@@ -97,7 +97,7 @@ export default function ContactForm() {
         <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-ink-700">
           Phone (optional)
         </label>
-        <input id="phone" name="phone" type="tel" placeholder="+234 ..." className={inputClass} />
+        <input id="phone" name="phone" type="tel" placeholder="+233 ..." className={inputClass} />
       </div>
 
       <div className="mt-4">
