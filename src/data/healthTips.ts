@@ -165,83 +165,40 @@ export const healthTips: HealthTip[] = [
     content: [
       {
         type: "p",
-        text: "Healthy eating is often seen as a luxury, but it does not have to be. With a little knowledge and planning, you can build a balanced diet on a modest budget — and enjoy real benefits for your energy, mood and long-term health.",
+        text: "Healthy eating does not have to be expensive. With a little planning and smarter shopping, you can eat well on almost any budget.",
       },
       {
         type: "h2",
-        text: "What a balanced diet really looks like",
+        text: "Build a balanced plate",
       },
       {
         type: "p",
-        text: "A healthy plate does not need expensive ingredients. Aim for variety across four simple food groups:",
+        text: "Fill about half your plate with vegetables and fruits, add a serving of whole grains, and include a source of protein such as beans, eggs or fish. Aim for balance across the week rather than perfection every day.",
+      },
+      {
+        type: "h2",
+        text: "Plan and shop smart",
       },
       {
         type: "ul",
         items: [
-          "Vegetables and fruits — try to fill about half your plate, choosing different colours to get a wide range of vitamins and minerals.",
-          "Whole grains — rice, oats, maize, wholemeal bread or pasta provide lasting energy and fibre.",
-          "Protein — beans, lentils, eggs, fish, chicken or meat in sensible portions.",
-          "Healthy fats — a little cooking oil, groundnuts or avocado, used in moderation.",
-        ],
-      },
-      {
-        type: "p",
-        text: "You do not need to get this perfect every single day. Aim for balance across the week rather than worrying about each individual meal.",
-      },
-      {
-        type: "h2",
-        text: "Plan before you shop",
-      },
-      {
-        type: "p",
-        text: "Most overspending happens without a plan. A few minutes of planning each week can dramatically reduce your food bill and the amount of food you throw away:",
-      },
-      {
-        type: "ul",
-        items: [
-          "Write a simple menu for the week before you go shopping.",
-          "Make a shopping list and stick to it — it protects you from impulse purchases.",
-          "Check what you already have in the cupboard before buying more of the same.",
-          "Shop after a meal rather than on an empty stomach, so you make clearer choices.",
+          "Write a weekly menu and shop with a list.",
+          "Buy fruits and vegetables in season — they are cheaper and fresher.",
+          "Buy staples like rice, beans and oats in bulk.",
+          "Compare brands and consider own-brand options.",
         ],
       },
       {
         type: "h2",
-        text: "Shop smarter, not harder",
+        text: "Cook once, eat twice",
       },
       {
         type: "p",
-        text: "The same ingredients can cost very different amounts depending on where and how you buy them:",
-      },
-      {
-        type: "ul",
-        items: [
-          "Buy fruits and vegetables in season — they are cheaper, fresher and more nutritious.",
-          "Visit local markets late in the day, when sellers often reduce their prices.",
-          "Choose staples such as rice, beans, oats and pasta in larger bags to save money over time.",
-          "Compare prices between brands and consider own-brand or unbranded options, which are often identical in quality.",
-          "Frozen vegetables and fish are just as nutritious as fresh ones, and can be cheaper and more convenient.",
-        ],
-      },
-      {
-        type: "h2",
-        text: "Cook once, enjoy several meals",
+        text: "Prepare larger portions and store leftovers for the next day. A big pot of stew or beans can become several meals, saving both money and time.",
       },
       {
         type: "p",
-        text: "Cooking in larger batches saves both money and time. A big pot of soup, stew or beans can be stretched across several meals, and leftovers can be packed for work or school the next day. Store leftovers in the fridge and reheat them thoroughly before eating.",
-      },
-      {
-        type: "h2",
-        text: "Cut down on food waste",
-      },
-      {
-        type: "p",
-        text: "Wasted food is wasted money. Use older vegetables first, keep leftovers visible in the fridge so they are not forgotten, and get creative — overripe fruit can become smoothies, and vegetable peelings can add flavour to soups.",
-      },
-      {
-        type: "p",
-        text: "The takeaway is simple: eating well on a budget is not about sacrifice, but about planning, smart shopping and a little creativity in the kitchen. Small, consistent choices add up to a healthier body and a healthier wallet.",
+        text: "Eating well on a budget is about smart choices, not sacrifice. Small steps add up to better health and a healthier wallet.",
       },
     ],
   },
