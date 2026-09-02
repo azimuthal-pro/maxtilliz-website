@@ -3,9 +3,9 @@ export const site = {
   tagline: "Your Trusted Community Pharmacy",
   description:
     "A community pharmacy offering prescription dispensing, health consultations, medication guidance, health screening, wellness and personal care products.",
-  phone: "[+233 59 479 0091]", 
-  whatsapp: "[+233 59 479 0091]", 
-  email: "[maxtillizpharmacy@gmail.com]",
+  phone: "+233 59 479 0091", 
+  whatsapp: "+233 59 479 0091", 
+  email: "maxtillizpharmacy@gmail.com",
   locations: [
     {
       name: "Main Branch",
@@ -15,9 +15,9 @@ export const site = {
     },
     {
       name: "Second Branch",
-      street: "[Ablekuma Agbajeena, Agbajeena St., Accra]",
-      city: "[Accra, Ablekuma Agbajeena]",
-      full: "[Ablekuma Agbajeena, Agbajeena St. , Accra]",
+      street: "Ablekuma Agbajeena, Agbajeena St., Accra",
+      city: "Accra, Ablekuma Agbajeena",
+      full: "Ablekuma Agbajeena, Agbajeena St. , Accra",
     },
   ],
   hours: [
