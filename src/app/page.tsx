@@ -82,7 +82,7 @@ export default function HomePage() {
           {/* Hero card */}
           <div className="rounded-2xl bg-white p-7 text-ink-900 shadow-2xl">
             <h3 className="text-lg font-bold">Why people visit us</h3>
-            <ul className="mt-3 divide-y divide-dashed divide-ink-100 text-sm">
+            <ul className="mt-3 divide-y divide-dashed divide-ink-100 text-base">
               {[
                 "Quick, accurate prescription dispensing",
                 "Free medication guidance & counselling",
@@ -132,19 +132,19 @@ export default function HomePage() {
               <div className="text-2xl font-bold text-brand-600">
                 {site.stats.years}
               </div>
-              <div className="mt-1 text-xs text-ink-500">Years of service</div>
+              <div className="mt-1 text-sm text-ink-500">Years of service</div>
             </div>
             <div className="rounded-xl bg-brand-50 p-4 text-center">
               <div className="text-2xl font-bold text-brand-600">
                 {site.stats.customers}
               </div>
-              <div className="mt-1 text-xs text-ink-500">Happy customers</div>
+              <div className="mt-1 text-sm text-ink-500">Happy customers</div>
             </div>
             <div className="rounded-xl bg-brand-50 p-4 text-center">
               <div className="text-2xl font-bold text-brand-600">
                 {site.stats.branches}
               </div>
-              <div className="mt-1 text-xs text-ink-500">Branches</div>
+              <div className="mt-1 text-sm text-ink-500">Branches</div>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold text-ink-900">
                     {service.title}
                   </h3>
-                  <p className="mt-2 text-sm text-ink-500">
+                  <p className="mt-2 text-base text-ink-500">
                     {service.description}
                   </p>
                 </div>
@@ -217,7 +217,7 @@ export default function HomePage() {
                 <h3 className="text-base font-bold text-ink-900 transition-colors duration-300 group-hover:text-brand-700">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-ink-500">{item.text}</p>
+                <p className="mt-2 text-base text-ink-500">{item.text}</p>
               </div>
             ))}
           </div>
@@ -259,7 +259,7 @@ export default function HomePage() {
         <div className="container-page flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
           <div>
             <h2 className="text-2xl font-bold">Visit us or get in touch</h2>
-            <ul className="mt-4 space-y-2 text-sm text-white/85">
+            <ul className="mt-4 space-y-2 text-base text-white/85">
               {site.locations.map((loc) => (
                 <li key={loc.name}>📍 {loc.full}</li>
               ))}

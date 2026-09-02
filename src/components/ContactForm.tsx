@@ -65,7 +65,7 @@ export default function ContactForm() {
   }
 
   const inputClass =
-    "w-full rounded-lg border border-ink-100 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-300 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/20";
+    "w-full rounded-lg border border-ink-100 bg-white px-4 py-3 text-base text-ink-900 placeholder:text-ink-300 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/20";
 
   return (
     <form
@@ -74,7 +74,7 @@ export default function ContactForm() {
       className="rounded-2xl border border-ink-100 bg-white p-7 shadow-sm"
     >
       <h2 className="text-xl font-bold text-ink-900">Send us a message</h2>
-      <p className="mt-1 text-sm text-ink-500">
+      <p className="mt-1 text-base text-ink-500">
         We usually reply within one business day.
       </p>
 

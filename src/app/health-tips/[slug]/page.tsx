@@ -106,7 +106,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <h3 className="text-lg font-bold text-ink-900">
             Have a question about your health?
           </h3>
-          <p className="mt-2 text-sm text-ink-500">
+          <p className="mt-2 text-base text-ink-500">
             Our pharmacists are here to help. Reach out any time.
           </p>
           <Link

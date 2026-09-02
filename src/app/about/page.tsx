@@ -162,7 +162,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
               </div>
               <div className="p-8 text-center">
                 <h3 className="text-lg font-bold text-ink-900">{mission.title}</h3>
-                <p className="mt-3 text-sm text-ink-700">{mission.text}</p>
+                <p className="mt-3 text-base text-ink-700">{mission.text}</p>
               </div>
             </div>
             <div className="overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
@@ -177,7 +177,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
               </div>
               <div className="p-8 text-center">
                 <h3 className="text-lg font-bold text-ink-900">{vision.title}</h3>
-                <p className="mt-3 text-sm text-ink-700">{vision.text}</p>
+                <p className="mt-3 text-base text-ink-700">{vision.text}</p>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
                   <h3 className="mt-3 text-base font-bold text-ink-900">
                     {value.title}
                   </h3>
-                  <p className="mt-2 text-sm text-ink-700">{value.text}</p>
+                  <p className="mt-2 text-base text-ink-700">{value.text}</p>
                 </div>
               </div>
             ))}

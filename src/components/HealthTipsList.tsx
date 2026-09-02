@@ -86,11 +86,11 @@ export default function HealthTipsList({ tips, categories }: HealthTipsListProps
                     {tip.title}
                   </Link>
                 </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-500">
+                <p className="mt-2 flex-1 text-base leading-relaxed text-ink-500">
                   {tip.summary}
                 </p>
                 <div className="mt-5 flex items-center justify-between border-t border-ink-100 pt-4">
-                  <span className="text-xs text-ink-400">{formatToday()}</span>
+                  <span className="text-sm text-ink-400">{formatToday()}</span>
                   <Link
                     href={`/health-tips/${tip.slug}`}
                     className="inline-flex items-center gap-1 text-sm font-semibold text-brand-600 transition-colors hover:text-brand-700"

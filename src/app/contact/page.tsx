@@ -80,7 +80,7 @@ export default function ContactPage() {
                   </div>
                   <ul className="mt-1 space-y-1">
                     {site.locations.map((loc) => (
-                      <li key={loc.name} className="text-sm text-ink-700">
+                      <li key={loc.name} className="text-base text-ink-700">
                         <span className="font-medium">{loc.name}:</span>{" "}
                         {loc.full}
                       </li>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   </div>
                   <ul className="mt-1 space-y-0.5">
                     {site.hours.map((row) => (
-                      <li key={row.days} className="text-sm text-ink-700">
+                      <li key={row.days} className="text-base text-ink-700">
                         <span className="font-medium">{row.days}:</span> {row.time}
                       </li>
                     ))}
