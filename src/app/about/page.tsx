@@ -114,7 +114,7 @@ export default function AboutPage() {
 
           {/* Our story */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 aspect-square overflow-hidden rounded-2xl bg-white p-6 shadow-lg lg:order-1">
+            <div className="order-2 mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-white p-6 shadow-lg lg:order-1">
               <Image
                 src="/images/maxtilliz-logo.png"
                 alt={`${site.name} logo`}
