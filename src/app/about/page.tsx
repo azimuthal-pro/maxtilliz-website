@@ -114,13 +114,13 @@ export default function AboutPage() {
 
           {/* Our story */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl bg-brand-50 p-10 shadow-lg lg:order-1">
+            <div className="order-2 aspect-square overflow-hidden rounded-2xl bg-white p-6 shadow-lg lg:order-1">
               <Image
                 src="/images/maxtilliz-logo.png"
                 alt={`${site.name} logo`}
                 width={256}
                 height={256}
-                className="h-auto w-40 object-contain sm:w-52"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="order-1 lg:order-2">
