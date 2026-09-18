@@ -65,13 +65,25 @@ export default function Footer() {
         {/* Contact */}
         <div>
           <h4 className="mb-4 text-base font-semibold text-white">Contact</h4>
-          <ul className="space-y-2.5 text-slate-400">
+          <ul className="space-y-3 text-slate-400">
             {site.locations.map((loc) => (
-              <li key={loc.name}>📍 {loc.full}</li>
+              <li key={loc.name} className="flex gap-2.5">
+                <span className="w-5 shrink-0 leading-relaxed">📍</span>
+                <span className="leading-relaxed">{loc.full}</span>
+              </li>
             ))}
-            <li>📞 {site.phone}</li>
-            <li>📱 {site.whatsapp}</li>
-            <li>✉️ {site.email}</li>
+            <li className="flex gap-2.5">
+              <span className="w-5 shrink-0">📞</span>
+              <span>{site.phone}</span>
+            </li>
+            <li className="flex gap-2.5">
+              <span className="w-5 shrink-0">📱</span>
+              <span>{site.whatsapp}</span>
+            </li>
+            <li className="flex gap-2.5">
+              <span className="w-5 shrink-0">✉️</span>
+              <span className="break-words">{site.email}</span>
+            </li>
           </ul>
         </div>
       </div>

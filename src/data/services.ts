@@ -7,9 +7,9 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1642055514517-7b52288890ec?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Pharmacy shelves stocked with medicine boxes",
+    image: "/images/otc-medicines.png",
+    imageAlt:
+      "Neatly stocked pharmacy shelves with over-the-counter medicines and health products",
     title: "OTC Medicines",
     description:
       "Over-the-counter remedies for common ailments, always in stock and clearly explained by our team.",

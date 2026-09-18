@@ -114,13 +114,13 @@ export default function AboutPage() {
 
           {/* Our story */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 overflow-hidden rounded-2xl shadow-lg lg:order-1">
+            <div className="order-2 grid aspect-[4/3] place-items-center overflow-hidden rounded-2xl bg-brand-50 p-10 shadow-lg lg:order-1">
               <Image
-                src="/images/placeholders/pharmacy.svg"
-                alt="Inside our pharmacy"
-                width={1200}
-                height={900}
-                className="aspect-[4/3] w-full object-cover"
+                src="/images/maxtilliz-logo.png"
+                alt={`${site.name} logo`}
+                width={256}
+                height={256}
+                className="h-auto w-40 object-contain sm:w-52"
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -238,7 +238,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
               ))}
             </ul>
           </div>
-          <div className="overflow-hidden rounded-2xl shadow-lg">
+          {/* <div className="overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/images/placeholders/team.svg"
               alt="Pharmacist counselling a customer"
@@ -246,7 +246,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
               height={900}
               className="aspect-[4/3] w-full object-cover"
             />
-          </div>
+          </div> */}
         </div>
       </section>
     </>
