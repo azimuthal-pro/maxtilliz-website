@@ -194,7 +194,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
             title="The principles we work by"
             description="These values guide every interaction, every prescription and every piece of advice."
           />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {values.map((value) => (
               <div
                 key={value.title}
