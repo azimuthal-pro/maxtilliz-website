@@ -101,14 +101,14 @@ export default function AboutPage() {
                 your family's health.
               </p>
             </div>
-            <div className="overflow-hidden rounded-2xl shadow-lg">
+            <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src="/images/our-team.jpg"
-                alt="Two members of the Maxtilliz Chem team standing at the counter in our pharmacy"
-                width={1086}
-                height={1448}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="aspect-[3/4] w-full object-cover"
+                alt="Two members of the Maxtilliz Chem team standing in our pharmacy"
+                width={900}
+                height={1200}
+                sizes="(max-width: 640px) 100vw, 384px"
+                className="h-auto w-full"
               />
             </div>
           </div>
