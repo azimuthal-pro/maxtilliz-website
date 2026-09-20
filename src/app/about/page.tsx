@@ -103,11 +103,12 @@ export default function AboutPage() {
             </div>
             <div className="overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/images/placeholders/team.svg"
-                alt="Our pharmacy team at work"
-                width={1200}
-                height={900}
-                className="aspect-[4/3] w-full object-cover"
+                src="/images/our-team.jpg"
+                alt="Two members of the Maxtilliz Chem team standing at the counter in our pharmacy"
+                width={1086}
+                height={1448}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="aspect-[3/4] w-full object-cover"
               />
             </div>
           </div>
