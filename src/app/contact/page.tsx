@@ -106,36 +106,13 @@ export default function ContactPage() {
                   </ul>
                 </div>
               </li>
-            </ul>
-
-            {/* Social */}
-            {/* <div className="mt-6">
-              <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-500">
-                Follow us
-              </div>
-              <div className="flex gap-3">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={isPlaceholder(link.href) ? "#" : link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={link.label}
-                    className="grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-base font-semibold text-brand-600 transition-colors hover:bg-brand-600 hover:text-white"
-                  >
-                    {link.icon}
-                  </a>
-                ))}
-              </div>
-            </div> */}
+            </ul>            
           </div>
 
           {/* Contact form */}
           <ContactForm />
         </div>
-      </section>
-
-     
+      </section>     
     </>
   );
 }

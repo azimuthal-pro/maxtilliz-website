@@ -3,6 +3,7 @@ export interface Service {
   imageAlt: string;
   title: string;
   description: string;
+  highlights: string[];
 }
 
 export const services: Service[] = [
@@ -13,6 +14,11 @@ export const services: Service[] = [
     title: "OTC Medicines",
     description:
       "Over-the-counter remedies for common ailments, always in stock and clearly explained by our team.",
+    highlights: [
+      "Everyday remedies for colds, pain, fever and allergies",
+      "Genuine, quality-assured products",
+      "Clear dosing advice from our team",
+    ],
   },
   {
     image:
@@ -21,6 +27,11 @@ export const services: Service[] = [
     title: "Health Consultations",
     description:
       "Private, friendly consultations for advice on your medicines and minor health concerns.",
+    highlights: [
+      "A private space to talk through your concerns",
+      "Advice on medicines and minor ailments",
+      "No appointment needed — just walk in",
+    ],
   },
   {
     image:
@@ -29,6 +40,11 @@ export const services: Service[] = [
     title: "Medication Guidance",
     description:
       "Clear guidance on how and when to take your medicines safely and effectively.",
+    highlights: [
+      "How and when to take your medicines",
+      "Understanding side effects and interactions",
+      "Support with refills and sticking to your routine",
+    ],
   },
   {
     image:
@@ -37,6 +53,11 @@ export const services: Service[] = [
     title: "Health Screening",
     description:
       "Simple screening checks to help you stay on top of your blood pressure, sugar and more.",
+    highlights: [
+      "Blood pressure and blood sugar checks",
+      "Quick and painless, done in-store",
+      "Results explained in plain language",
+    ],
   },
   {
     image:
@@ -45,6 +66,11 @@ export const services: Service[] = [
     title: "Wellness Products",
     description:
       "Vitamins, supplements and wellness products to support your everyday wellbeing.",
+    highlights: [
+      "Vitamins, minerals and supplements",
+      "Options for immunity, energy and everyday wellbeing",
+      "Guidance on what suits your needs",
+    ],
   },
   {
     image:
@@ -53,5 +79,10 @@ export const services: Service[] = [
     title: "Personal Care Products",
     description:
       "Personal and family care essentials for every day — from skincare to first aid.",
+    highlights: [
+      "Skin, oral, hair and body care",
+      "First aid and family essentials",
+      "Trusted brands at fair prices",
+    ],
   },
 ];

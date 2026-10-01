@@ -9,9 +9,9 @@ export const site = {
   locations: [
     {
       name: "Main Branch",
-      street: "[Ablekuma Olebu, God first St. , Accra]",
-      city: "[Accra, Ablekuma Olebu]",
-      full: "[Ablekuma Olebu, God first St., Accra]",
+      street: "Ablekuma Olebu, God first St. , Accra",
+      city: "Accra, Ablekuma Olebu",
+      full: "Ablekuma Olebu, God first St., Accra",
     },
     {
       name: "Second Branch",

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import type { LucideIcon } from "lucide-react";
+import { LogOut, MailCheck, UserPlus } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import DailyTipsSignup from "@/components/DailyTipsSignup";
@@ -11,19 +13,19 @@ export const metadata: Metadata = {
   description: `Sign up for a free daily health tip by email from ${site.name} — short, practical advice for you and your family.`,
 };
 
-const steps = [
+const steps: { icon: LucideIcon; title: string; text: string }[] = [
   {
-    step: "1",
+    icon: UserPlus,
     title: "Sign up",
     text: "Enter your name and email address — it takes a few seconds.",
   },
   {
-    step: "2",
+    icon: MailCheck,
     title: "Get one tip a day",
     text: "Every morning we email you a short, practical health tip.",
   },
   {
-    step: "3",
+    icon: LogOut,
     title: "Leave any time",
     text: "Not for you? Unsubscribe with one click, no questions asked.",
   },
@@ -37,7 +39,6 @@ export default function DailyTipsPage() {
       <PageHero
         title="Daily Health Tips"
         subtitle="A short, practical health tip in your inbox every morning — completely free."
-        breadcrumb="Home / Daily Health Tips"
       />
 
       {/* HOW IT WORKS */}
@@ -50,18 +51,18 @@ export default function DailyTipsPage() {
             description="We'll send you everyday health advice you can actually use — no jargon, no spam."
           />
           <div className="grid gap-6 sm:grid-cols-3">
-            {steps.map((item) => (
+            {steps.map(({ icon: Icon, title, text }) => (
               <div
-                key={item.step}
+                key={title}
                 className="rounded-2xl border border-ink-100 bg-white p-7 text-center"
               >
-                <div className="mx-auto grid h-11 w-11 place-items-center rounded-full bg-brand-50 text-lg font-bold text-brand-600">
-                  {item.step}
+                <div className="mx-auto grid h-11 w-11 place-items-center rounded-full bg-brand-50 text-brand-600">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <h3 className="mt-4 text-base font-bold text-ink-900">
-                  {item.title}
+                  {title}
                 </h3>
-                <p className="mt-2 text-base text-ink-700">{item.text}</p>
+                <p className="mt-2 text-base text-ink-700">{text}</p>
               </div>
             ))}
           </div>

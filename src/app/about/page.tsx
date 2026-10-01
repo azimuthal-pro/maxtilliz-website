@@ -92,41 +92,51 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container-page space-y-20">
           {/* Who we are */}
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
             <div>
-              <SectionHeading eyebrow="Who we are" title="An OTC that puts people first" />
+              <span className="eyebrow">Who we are</span>
               <p className="mb-4 text-ink-700">
-                {site.name} is a community OTC medication provider built on a simple belief:
-                healthcare should be personal, honest and accessible. We are
-                more than a place to pick up medicines — we are a partner in
-                your family's health.
+                <strong className="font-semibold text-ink-900">{site.name}</strong> is a
+                community-based OTC medication provider built on a simple belief:{" "}
+               
+                  healthcare should be personal, honest, and accessible to everyone.
+              </p>
+              <p className="mb-4 text-ink-700">
+                We are more than just a place to pick up medicines. We strive to be a trusted
+                partner in your everyday health journey, providing quality healthcare
+                products, reliable information, and friendly service you can count on.
+              </p>
+              <p className="text-ink-700">
+                From everyday health needs to essential OTC medications, we are committed to
+                making healthcare more convenient and accessible for individuals and families
+                in our community. We believe that everyone deserves to understand the products
+                they use and feel confident when making decisions about their health.
               </p>
             </div>
-            <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl shadow-lg">
+            <div className="group relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl shadow-lg transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
               <Image
                 src="/images/our-team.jpg"
                 alt="Two members of the Maxtilliz Chem team standing in our pharmacy"
-                width={900}
-                height={1200}
+                fill
                 sizes="(max-width: 640px) 100vw, 384px"
-                className="h-auto w-full"
+                className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-105"
               />
             </div>
           </div>
 
           {/* Our story */}
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-white p-6 shadow-lg lg:order-1">
+            <div className="group order-2 mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl lg:order-1">
               <Image
                 src="/images/maxtilliz-logo.png"
                 alt={`${site.name} logo`}
                 width={256}
                 height={256}
-                className="h-full w-full object-contain"
+                className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-105"
               />
             </div>
             <div className="order-1 lg:order-2">
-              <SectionHeading eyebrow="Our story" title="" />
+              <span className="eyebrow">Our story</span>
               <p className="mb-4 text-ink-700">
 Maxtillixz Chem was founded in 2017 with the aim of providing quality and affordable healthcare products to the community. What started as a small shop has grown into a trusted healthcare facility, built on professionalism, customer care, and reliability.
 
@@ -152,14 +162,14 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
             title="Mission & Vision"
           />
           <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
-            <div className="overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
-              <div className="relative aspect-[16/9] w-full">
+            <div className="group overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src={mission.image}
                   alt={mission.imageAlt}
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-105"
                 />
               </div>
               <div className="p-8 text-center">
@@ -167,14 +177,14 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
                 <p className="mt-3 text-base text-ink-700">{mission.text}</p>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
-              <div className="relative aspect-[16/9] w-full">
+            <div className="group overflow-hidden rounded-2xl border border-ink-100 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src={vision.image}
                   alt={vision.imageAlt}
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-105"
                 />
               </div>
               <div className="p-8 text-center">
