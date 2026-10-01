@@ -46,12 +46,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/contact"
-            className="hidden rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-700 sm:inline-block"
-          >
-            Contact Us
-          </Link>
           {/* Mobile toggle */}
           <button
             type="button"
@@ -102,13 +96,6 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="mt-4 block rounded-lg bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white"
-          >
-            Contact Us
-          </Link>
         </nav>
       )}
     </header>
