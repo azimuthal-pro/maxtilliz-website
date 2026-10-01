@@ -67,12 +67,6 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/contact"
-                className="inline-block rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-550"
-              >
-                Visit Us Today
-              </Link>
-              <Link
                 href="/services"
                 className="inline-block rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-550"
               >
