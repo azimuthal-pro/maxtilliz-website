@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import StatsCards from "@/components/StatsCards";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
 import { healthTips } from "@/data/healthTips";
@@ -129,26 +130,11 @@ export default function HomePage() {
               More About Us
             </Link>
           </div>
-          <div className="grid grid-cols-3 gap-4">
-            <div className="rounded-xl bg-brand-50 p-4 text-center">
-              <div className="text-2xl font-bold text-brand-600">
-                {site.stats.years}
-              </div>
-              <div className="mt-1 text-sm text-ink-500">Years of service</div>
-            </div>
-            <div className="rounded-xl bg-brand-50 p-4 text-center">
-              <div className="text-2xl font-bold text-brand-600">
-                {site.stats.customers}
-              </div>
-              <div className="mt-1 text-sm text-ink-500">Happy customers</div>
-            </div>
-            <div className="rounded-xl bg-brand-50 p-4 text-center">
-              <div className="text-2xl font-bold text-brand-600">
-                {site.stats.branches}
-              </div>
-              <div className="mt-1 text-sm text-ink-500">Branches</div>
-            </div>
-          </div>
+          <StatsCards
+            years={site.stats.years}
+            customers={site.stats.customers}
+            branches={site.stats.branches}
+          />
         </div>
       </section>
 
