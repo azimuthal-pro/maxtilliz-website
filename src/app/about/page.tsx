@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import { site } from "@/data/site";
@@ -194,7 +195,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
             title="The principles we work by"
             description="These values guide every interaction, every prescription and every piece of advice."
           />
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {values.map((value) => (
               <div
                 key={value.title}
@@ -222,7 +223,7 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
       </section>
 
       {/* WHY CUSTOMERS TRUST US */}
-      <section className="bg-ink-900 py-20 text-white">
+      {/* <section className="bg-ink-900 py-20 text-white">
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading
@@ -233,7 +234,10 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
             <ul className="mt-6 space-y-3">
               {trustPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3 text-white/90">
-                  <span className="font-bold text-accent-400">✓</span>
+                  <Check
+                    className="mt-0.5 h-5 w-5 shrink-0 text-brand-600"
+                    aria-hidden="true"
+                  />
                   {point}
                 </li>
               ))}
@@ -248,8 +252,8 @@ Maxtillixz Chem was founded in 2017 with the aim of providing quality and afford
               className="aspect-[4/3] w-full object-cover"
             />
           </div> */}
-        </div>
-      </section>
-    </>
+        </>//</div>
+      // </section> */}
+    //</>
   );
 }

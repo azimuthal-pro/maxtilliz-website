@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { navLinks, site } from "@/data/site";
 
 const serviceLinks = [
@@ -40,7 +41,7 @@ export default function Footer() {
           <ul className="space-y-2.5">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="transition-colors hover:text-accent-400">
+                <Link href={link.href} className="transition-colors hover:text-brand-550">
                   {link.label}
                 </Link>
               </li>
@@ -54,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-2.5">
             {serviceLinks.map((link) => (
               <li key={link.label}>
-                <Link href={link.href} className="transition-colors hover:text-accent-400">
+                <Link href={link.href} className="transition-colors hover:text-brand-550">
                   {link.label}
                 </Link>
               </li>
@@ -68,20 +69,32 @@ export default function Footer() {
           <ul className="space-y-3 text-slate-400">
             {site.locations.map((loc) => (
               <li key={loc.name} className="flex gap-2.5">
-                <span className="w-5 shrink-0 leading-relaxed">📍</span>
+                <MapPin
+                  className="mt-1 h-4 w-4 shrink-0 text-brand-550"
+                  aria-hidden="true"
+                />
                 <span className="leading-relaxed">{loc.full}</span>
               </li>
             ))}
             <li className="flex gap-2.5">
-              <span className="w-5 shrink-0">📞</span>
+              <Phone
+                className="mt-1 h-4 w-4 shrink-0 text-brand-550"
+                aria-hidden="true"
+              />
               <span>{site.phone}</span>
             </li>
             <li className="flex gap-2.5">
-              <span className="w-5 shrink-0">📱</span>
+              <MessageCircle
+                className="mt-1 h-4 w-4 shrink-0 text-brand-550"
+                aria-hidden="true"
+              />
               <span>{site.whatsapp}</span>
             </li>
             <li className="flex gap-2.5">
-              <span className="w-5 shrink-0">✉️</span>
+              <Mail
+                className="mt-1 h-4 w-4 shrink-0 text-brand-550"
+                aria-hidden="true"
+              />
               <span className="break-words">{site.email}</span>
             </li>
           </ul>

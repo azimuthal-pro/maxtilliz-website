@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
@@ -94,9 +95,10 @@ export default function HomePage() {
                   key={item}
                   className="group flex items-start gap-3 rounded-lg py-3 transition-all duration-500 ease-out hover:-translate-y-1 hover:bg-brand-50/70 hover:shadow-sm"
                 >
-                  <span className="mt-0.5 font-bold text-brand-600 transition-transform duration-500 ease-out group-hover:scale-110">
-                    ✓
-                  </span>
+                  <Check
+                    className="mt-0.5 h-5 w-5 shrink-0 text-brand-600 transition-transform duration-500 ease-out group-hover:scale-110"
+                    aria-hidden="true"
+                  />
                   {item}
                 </li>
               ))}
@@ -250,27 +252,6 @@ export default function HomePage() {
               height={800}
               className="aspect-[4/3] w-full object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* ================= BRANCH / CONTACT SUMMARY ================= */}
-      <section className="bg-ink-900 py-16 text-white">
-        <div className="container-page flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
-          <div>
-            <h2 className="text-2xl font-bold">Visit us or get in touch</h2>
-            <ul className="mt-4 space-y-2 text-base text-white/85">
-              {site.locations.map((loc) => (
-                <li key={loc.name}>📍 {loc.full}</li>
-              ))}
-              <li>
-                📞 {site.phone} &nbsp;·&nbsp; 📱 {site.whatsapp}
-              </li>
-              <li>✉️ {site.email}</li>
-              <li>
-                🕘 Mon – Sat: 7:30 AM – 9:00 PM · Sun: 1:30 PM – 9:00 PM
-              </li>
-            </ul>
           </div>
         </div>
       </section>

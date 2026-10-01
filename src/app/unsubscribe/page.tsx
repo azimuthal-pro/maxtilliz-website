@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { AlertTriangle, CheckCircle2, Info } from "lucide-react";
 import { getSupabaseAdmin, SUBSCRIBERS_TABLE } from "@/lib/supabase";
 
 export const metadata: Metadata = {
@@ -68,8 +69,20 @@ export default async function UnsubscribePage({
     <section className="py-20">
       <div className="container-page">
         <div className="mx-auto max-w-xl rounded-2xl border border-ink-100 bg-white p-8 text-center shadow-sm">
-          <div className="text-4xl">
-            {state === "done" ? "✅" : state === "error" ? "⚠️" : "ℹ️"}
+          <div className="flex justify-center">
+            {state === "done" ? (
+              <CheckCircle2
+                className="h-10 w-10 text-brand-600"
+                aria-hidden="true"
+              />
+            ) : state === "error" ? (
+              <AlertTriangle
+                className="h-10 w-10 text-accent-500"
+                aria-hidden="true"
+              />
+            ) : (
+              <Info className="h-10 w-10 text-ink-500" aria-hidden="true" />
+            )}
           </div>
           <h1 className="mt-4 text-2xl font-bold text-ink-900">{title}</h1>
           <p className="mt-3 text-base text-ink-700">{body}</p>

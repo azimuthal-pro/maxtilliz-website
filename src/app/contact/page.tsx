@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
@@ -38,8 +39,8 @@ export default function ContactPage() {
 
             <ul className="divide-y divide-dashed divide-ink-100">
               <li className="flex gap-4 py-4">
-                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50 text-lg">
-                  📞
+                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50">
+                  <Phone className="h-5 w-5 text-brand-600" aria-hidden="true" />
                 </span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
@@ -49,8 +50,8 @@ export default function ContactPage() {
                 </div>
               </li>
               <li className="flex gap-4 py-4">
-                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50 text-lg">
-                  📱
+                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50">
+                  <MessageCircle className="h-5 w-5 text-brand-600" aria-hidden="true" />
                 </span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
@@ -60,8 +61,8 @@ export default function ContactPage() {
                 </div>
               </li>
               <li className="flex gap-4 py-4">
-                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50 text-lg">
-                  ✉️
+                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50">
+                  <Mail className="h-5 w-5 text-brand-600" aria-hidden="true" />
                 </span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
@@ -71,8 +72,8 @@ export default function ContactPage() {
                 </div>
               </li>
               <li className="flex gap-4 py-4">
-                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50 text-lg">
-                  📍
+                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50">
+                  <MapPin className="h-5 w-5 text-brand-600" aria-hidden="true" />
                 </span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
@@ -89,8 +90,8 @@ export default function ContactPage() {
                 </div>
               </li>
               <li className="flex gap-4 py-4">
-                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50 text-lg">
-                  🕘
+                <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl bg-brand-50">
+                  <Clock className="h-5 w-5 text-brand-600" aria-hidden="true" />
                 </span>
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-ink-500">
