@@ -5,7 +5,7 @@ export const site = {
     "A community pharmacy offering prescription dispensing, health consultations, medication guidance, health screening, wellness and personal care products.",
   phone: "+233 59 479 0091", 
   whatsapp: "+233 59 479 0091", 
-  email: "maxtillizpharmacy@gmail.com",
+  email: "info@maxtillizchem.com",
   locations: [
     {
       name: "Main Branch",
@@ -25,10 +25,10 @@ export const site = {
     { days: "Sunday", time: "1:30 PM – 9:00 PM" },
   ],
   social: {
-    facebook: "[https://facebook.com/maxtillizpharmacy]",
-    instagram: "[https://instagram.com/maxtillizpharmacy]",
-    x: "[https://x.com/maxtillizpharmacy]",
-    tiktok: "[https://tiktok.com/@maxtillizpharmacy]",
+    facebook: "[https://facebook.com/maxtillizchem]",
+    instagram: "[https://instagram.com/maxtillizchem]",
+    x: "[https://x.com/maxtillizchem]",
+    tiktok: "[https://tiktok.com/@maxtillizchem]",
   },
   mapsEmbedUrl: "[https://www.google.com/maps/embed?...]",
   stats: {
